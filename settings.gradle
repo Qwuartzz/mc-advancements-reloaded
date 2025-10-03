@@ -7,10 +7,13 @@ pluginManagement {
         maven { url "https://jitpack.io" } // JitPack Repository
         gradlePluginPortal() // Gradle Plugin Repository
     }
+    plugins {
+        id("dev.architectury.loom") version "1.11-SNAPSHOT"
+    }
 }
 
 include("common") // Common directory
 include("fabric") // Fabric directory
-include("neoforge") // NeoForge directory
+//include("neoforge") // NeoForge directory
 //include("forge") // Forge directory
 rootProject.name = 'advancements_reloaded'
